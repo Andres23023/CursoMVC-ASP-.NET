@@ -44,7 +44,7 @@ namespace CapaNegocio
             {
                 MailMessage mail = new MailMessage();
                 mail.To.Add(correo);
-                mail.From = new MailAddress("pruebascodigo30@gmail.com");
+                mail.From = new MailAddress("miemail@gmail.com");
                 mail.Subject = asunto;
                 mail.Body = mensaje;
 
@@ -52,7 +52,7 @@ namespace CapaNegocio
 
                 var smtp = new SmtpClient()
                 {
-                    Credentials = new NetworkCredential("pruebascodigo30@gmail.com", "shan qppz rrso eidi"),
+                    Credentials = new NetworkCredential("miemail@gmail.com", "mipassword"),
                     Host = "smtp.gmail.com",
                     Port = 587,
                     EnableSsl = true
